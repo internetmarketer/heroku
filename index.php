@@ -48,8 +48,6 @@ var_dump($seedData);
 $uri = "mongodb://jimmy:databases@ds049486.mlab.com:49486/heroku_fc6hh3v0";
 $client = new MongoClient($uri);
 $db = $client->selectDB("heroku_fc6hh3v0");
-var_dump($db);exit;
-
 /*
  * First we'll add a few songs. Nothing is required to create the songs
  * collection; it is created automatically when we insert.
@@ -74,7 +72,6 @@ $songs->batchInsert($seedData);
 */
 $query = array('weeksAtOne' => array('$gte' => 10));
 $cursor = $songs->find($query)->sort(array('decade' => 1));
-
 
 foreach($cursor as $doc) {
 	echo 'In the ' .$doc['decade'];
