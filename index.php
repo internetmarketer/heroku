@@ -45,7 +45,7 @@ var_dump($seedData);
  * Mẫu kết nối tới cơ sở dữ liệu: 
  * mongodb://[username:password@]host:port/[database]
  */
-$uri = "mongodb://jimmy:databases@ds049486.mlab.com:49486/heroku_fc6hh3v0";
+$uri = "mongodb://jimmy:databases@ds049486.mlab.com:49486/";
 $client = new MongoClient($uri);
 $db = $client->selectDB("heroku_fc6hh3v0");
 /*
