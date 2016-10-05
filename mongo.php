@@ -45,15 +45,15 @@ $seedData = array(
  * Mẫu kết nối tới cơ sở dữ liệu: 
  * mongodb://[username:password@]host:port/[database]
  */
-$uri = "mongodb://vvroot:O84z0T@V^@wX*J5@ds049476.mlab.com:49476/";
+$uri = "mongodb://vvroot:Inz641U29zCbDnY@ds049486.mlab.com:49486/";
 $client = new MongoClient($uri);
-$db = $client->selectDB("heroku_3zph2vw9");
+$db = $client->selectDB("heroku_fc6hh3v0");
 
 /*
  * First we'll add a few songs. Nothing is required to create the songs
  * collection; it is created automatically when we insert.
  */
-$songs = $db->songs;
+$songs = $db->heroku_fc6hh3v0;
 
 // To insert a dict, use the insert method.
 $songs->batchInsert($seedData);
