@@ -45,9 +45,10 @@ $seedData = array(
  * Mẫu kết nối tới cơ sở dữ liệu: 
  * mongodb://[username:password@]host:port/[database]
  */
-$uri = "mongodb://vvroot:Inz641U29zCbDnY@ds049486.mlab.com:49486/";
+$uri = "mongodb://jimmy:databases@ds049486.mlab.com:49486/heroku_fc6hh3v0";
 $client = new MongoClient($uri);
 $db = $client->selectDB("heroku_fc6hh3v0");
+var_dump($db);exit;
 
 /*
  * First we'll add a few songs. Nothing is required to create the songs
