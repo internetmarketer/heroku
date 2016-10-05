@@ -40,7 +40,7 @@ $seedData = array(
         'weeksAtOne' => 16
     ),
 );
-
+var_dump($seedData);
 /*
  * Mẫu kết nối tới cơ sở dữ liệu: 
  * mongodb://[username:password@]host:port/[database]
