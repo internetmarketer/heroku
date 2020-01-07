@@ -6,7 +6,6 @@
   <title>Welcome to OpenShift</title>
 </head>
 <body>
-
 <?php
 /*
  * Copyright (c) 2016 ObjectLabs Corporation
